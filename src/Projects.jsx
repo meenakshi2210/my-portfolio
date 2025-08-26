@@ -9,7 +9,7 @@ const projects = [
     name: "Zoomagine",
     description: "A powerful AR platform designed to help promote biodiversity awareness through immersive experiences. This Unity-based application uses cutting-edge augmented reality technology to educate users about endangered species and their habitats.",
     tech: ["Unity", "C#", "AR/VR", "Android"],
-    link: "https://github.com/meenakshi2210/zoomagine",
+    link: "https://github.com/NamanArora2004/ZooMagine/tree/Meenakshi",
     category: "AR/VR",
     status: "patented",
     featured: true,
@@ -22,7 +22,7 @@ const projects = [
     name: "Cronicle",
     description: "A dynamic cultural preservation platform that helps communities preserve and share their heritage. This Android application promotes local vendors and enables cultural tourism through innovative technology.",
     tech: ["Android Studio", "Java", "Firebase", "Google Maps"],
-    link: "https://github.com/meenakshi2210/cronicleSIH.git",
+    link: "https://github.com/meenakshi2210/cronicleSIH",
     category: "Mobile",
     status: "patent-pending",
     featured: false,
@@ -35,7 +35,6 @@ const projects = [
     name: "Speed Recognizer",
     description: "Real-time vehicle speed detection system for traffic monitoring and safety applications. Uses advanced computer vision techniques to analyze video streams and calculate vehicle speeds accurately.",
     tech: ["Python", "OpenCV", "Computer Vision", "TensorFlow"],
-    link: "https://github.com/meenakshi2210/speed-recognizer",
     category: "AI/ML",
     status: "published",
     featured: false,
@@ -48,7 +47,7 @@ const projects = [
     name: "Electricity Bill Generation System",
     description: "Desktop application for automated electricity bill generation and management. Features comprehensive billing calculations, customer management, and report generation with an intuitive user interface.",
     tech: ["Java", "JDBC", "Swing", "MySQL"],
-    link: "#",
+    link: "https://github.com/meenakshi2210/Electricity_Bill",
     category: "Desktop",
     status: "published",
     featured: false,
@@ -61,7 +60,7 @@ const projects = [
     name: "HowToAlgo",
     description: "Comprehensive learning platform for Data Structures & Algorithms, System Design, and Machine Learning. Features interactive coding challenges, tutorials, and contest preparation materials.",
     tech: ["React", "Node.js", "MongoDB", "AWS"],
-    link: "#",
+    link: "https://www.howtoalgo.com/",
     category: "Web",
     status: "published",
     featured: false,
@@ -74,7 +73,7 @@ const projects = [
     name: "Portfolio Website",
     description: "Modern, responsive portfolio website built with React and featuring smooth animations, interactive elements, and optimized performance.",
     tech: ["React", "CSS3", "Framer Motion", "JavaScript"],
-    link: "#",
+    link: "https://github.com/meenakshi2210/my-portfolio",
     category: "Web",
     status: "published",
     featured: false,
@@ -87,7 +86,7 @@ const projects = [
     name: "ELearn Digital Classes",
     description: "Android application for digital learning designed for CBSE students from class 6 to class 12. Provides comprehensive syllabus details, textbooks, question/answers, practice papers, and interactive learning materials.",
     tech: ["Android Studio", "Java", "Firebase", "SQLite"],
-    link: "#",
+    link: "https://github.com/meenakshi2210/ELearn_DigitalClasses",
     category: "Mobile",
     status: "published",
     featured: false,
@@ -161,7 +160,7 @@ export default function Projects() {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <div className="project-stat">
-              <span className="stat-number">15+</span>
+              <span className="stat-number">10+</span>
               <span className="stat-label">Projects Built</span>
             </div>
             <div className="project-stat">
@@ -217,13 +216,14 @@ export default function Projects() {
                     <span key={index} className="tech-tag">{tech}</span>
                   ))}
                 </div>
-                <div className="project-actions">
                   {project.link && project.link !== "#" && (
                     <a
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
+                      onClick={(e) => e.stopPropagation()} // prevents parent card clicks from hijacking
+                      style={{ position: "relative", zIndex: 5, pointerEvents: "auto" }}
                     >
                       <span>View Code</span>
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -234,7 +234,6 @@ export default function Projects() {
                     </a>
                   )}
                 </div>
-              </div>
             </motion.div>
           ))}
         </div>

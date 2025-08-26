@@ -90,6 +90,7 @@ body {
   color: white;
   margin-bottom: 24px;
   letter-spacing: -0.02em;
+  margin-left: 100px;
 }
 
 .highlight {
@@ -119,6 +120,7 @@ body {
   margin-bottom: 32px;
   max-width: 500px;
   font-weight: 400;
+  margin-left: 100px;
 }
 
 .hero-cta {
@@ -126,6 +128,7 @@ body {
   gap: 16px;
   margin-bottom: 48px;
   flex-wrap: wrap;
+  margin-left: 100px;
 }
 
 .cta-button {
@@ -187,6 +190,7 @@ body {
 .hero-stats {
   display: flex;
   gap: 32px;
+  margin-left: 100px;
 }
 
 .stat {

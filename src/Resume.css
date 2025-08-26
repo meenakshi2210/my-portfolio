@@ -295,6 +295,7 @@
   background: var(--resume-gradient-1);
   transform: scaleX(0);
   transition: transform var(--transition-base);
+  width: 200px;
 }
 
 .resume-section:hover::before {
@@ -305,6 +306,10 @@
   background: var(--resume-bg-card-hover);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
+}
+
+.resume-right {
+  max-width: 1100px;
 }
 
 .section-title {

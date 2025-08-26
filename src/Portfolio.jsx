@@ -74,11 +74,11 @@ export default function Portfolio() {
               transition={{ duration: 0.8, delay: 1.1 }}
             >
               <div className="stat">
-                <span className="stat-number">20+</span>
+                <span className="stat-number">10+</span>
                 <span className="stat-label">Projects Completed</span>
               </div>
               <div className="stat">
-                <span className="stat-number">3+</span>
+                <span className="stat-number">1.5+</span>
                 <span className="stat-label">Years Experience</span>
               </div>
               <div className="stat">

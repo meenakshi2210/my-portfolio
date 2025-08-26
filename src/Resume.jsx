@@ -33,17 +33,30 @@ const skillVariants = {
 export default function Resume() {
   const skills = [
     { name: "Java", level: 90, icon: "☕" },
-    { name: "Python", level: 85, icon: "🐍" },
+    { name: "Python", level: 60, icon: "🐍" },
     { name: "React.js", level: 70, icon: "⚛️" },
-    { name: "Node.js", level: 80, icon: "🟢" },
-    { name: "MongoDB ", level: 82, icon: "🍃" },
-    { name: "AWS", level: 78, icon: "☁️" },
-    { name: "Unity AR", level: 60, icon: "🥽" },
+    { name: "Node.js", level: 70, icon: "🟢" },
+    { name: "MongoDB ", level: 70, icon: "🍃" },
+    { name: "AWS", level: 60, icon: "☁️" },
+    { name: "Unity AR", level: 40, icon: "🥽" },
     { name: "Figma", level: 75, icon: "🎨" },
     { name: "Android", level: 80, icon: "🤖" }
   ];
 
   const experiences = [
+    {
+      "title": "Student Intern – R&D",
+      "company": "Nokia",
+      "period": "August 2025 – Present",
+      "type": "Internship",
+      "achievements": [
+        "Working on advanced networking solutions",
+        "Exploring and implementing cloud infrastructure strategies",
+        "Gaining hands-on experience with 5G technology",
+        "Contributing to cloud-native application development and optimization"
+      ],
+      "tags": ["Networking", "Cloud Infrastructure", "5G", "Cloud Native", "Kubernetes", "Docker", "Linux", "Telecom R&D"]
+    },
     {
       title: "Creative Tech Developer Intern / Technical Content Lead",
       company: "Annuvrittiksha Pvt Ltd",
@@ -91,7 +104,15 @@ export default function Resume() {
       status: "Completed",
       tech: ["React", "Node.js", "MongoDB", "DSA"],
       impact: "💻 Coding Skills Enhancement"
+    },
+    {
+      "name": "ELearn Digital Classes",
+      "description": "Android application for CBSE students (Class 6–12) offering complete syllabus coverage, digital textbooks, Q&A, practice papers, and interactive learning modules.",
+      "status": "Completed",
+      "tech": ["Android Studio", "Java", "Firebase", "SQLite"],
+      "impact": "📱 Digital Learning for Students"
     }
+
   ];
 
   const education = [
@@ -135,8 +156,14 @@ export default function Resume() {
       {
         title: "Smart India Hackathon",
         description: "Participated in internal competition twice",
-        year: "2023-2024",
+        year: "2023-2024 & 2024-2025",
         icon: "💡"
+      },
+      {
+        title: "InnoSprint Hackathon",
+        description: "Participated at CGC Janjheri hackathon",
+        year: "2023",
+        icon: "🚀"
       }
     ],
     certifications: [
@@ -183,14 +210,26 @@ export default function Resume() {
         issuer: "RISE Startup Events",
         year: "2024",
         icon: "🎯"
+      },
+      {
+        title: "Salesforce Launchpad Program",
+        issuer: "PWC",
+        year: "2025",
+        icon: "🏆"
+      },
+      {
+        title: "Academy Automation Explorer Training",
+        issuer: "Ui Path Academy",
+        year: "2025",
+        icon: "🎯"
       }
     ],
     extraCurricular: [
       {
-        title: "State-level Chess Tournament",
-        description: "Competed in state-level competition",
+        title: "NCC Cadet",
+        description: "C Certificate Holder",
         year: "2017-2018",
-        icon: "♟️"
+        icon: "👏"
       },
       {
         title: "Code-Fillas Coding Event",
@@ -203,12 +242,6 @@ export default function Resume() {
         description: "Participated in coding competition",
         year: "2024",
         icon: "👏"
-      },
-      {
-        title: "InnoSprint Hackathon",
-        description: "Participated at CGC Janjheri hackathon",
-        year: "2023",
-        icon: "🚀"
       },
       {
         title: "Google's Girl Hackathon",
