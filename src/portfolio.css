@@ -1011,12 +1011,40 @@ body {
                 radial-gradient(circle at 20% 80%, #667eea33 0%, transparent 60%),
                 linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   }
+  .hero-content{
+    margin-left: -100px;
+    padding: 0 16px;
+  }
+  .hero-cta{
+    justify-content: center;
+    
+    padding: 0 16px;
+  }
   .hero-section {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
     background: radial-gradient(circle at 80% 20%, #f093fb44 0%, transparent 50%),
                 linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  .services-grid{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding-bottom: 10px;
+    width: 100vw;
+    margin: 0;
+  }
+  .service-card {
+    min-width: 80vw;
+    max-width: 85vw;
+    flex: 0 0 80vw;
+    scroll-snap-align: center;
+    margin: 0 auto;
+    transform: scale(0.92);
+    transition: transform 0.3s;
   }
   .featured-grid {
     display: flex;
@@ -1038,8 +1066,8 @@ body {
     transition: transform 0.3s;
   }
   .main-card {
-    min-width: 98vw;
-    max-width: 99vw;
+    min-width: 80vw;
+    max-width: 80vw;
     flex: 0 0 98vw;
   }
   .card-image {
