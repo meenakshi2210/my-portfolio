@@ -168,7 +168,7 @@ export default function Projects() {
               <span className="stat-label">Patents</span>
             </div>
             <div className="project-stat">
-              <span className="stat-number">5</span>
+              <span className="stat-number">5+</span>
               <span className="stat-label">Technologies</span>
             </div>
           </motion.div>

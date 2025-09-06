@@ -948,108 +948,111 @@
 }
 
 @media (max-width: 768px) {
-  .header-content {
+  .resume-main {
     grid-template-columns: 1fr;
-    gap: var(--space-sm);
-    padding: var(--space-sm);
-    text-align: center;
+    gap: var(--space-lg);
+    padding: 0 8px;
   }
-  
-  .achievements-list {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  .resume-section {
+    padding: var(--space-md);
+    border-radius: var(--border-radius-md);
   }
-  
-  .profile-section {
+  .section-title {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-md);
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  .project-card {
+    padding: var(--space-md);
+    border-radius: var(--border-radius-md);
+  }
+  .project-header {
     flex-direction: column;
+    align-items: flex-start;
     gap: var(--space-xs);
-    text-align: center;
   }
-  
-  .profile-image {
-    width: 60px;
-    height: 60px;
+  .project-name {
+    font-size: var(--font-size-base);
+    padding: 6px 10px;
+    border-radius: 6px;
   }
-  
-  .profile-name {
-    font-size: var(--font-size-xl);
+  .project-status {
+    font-size: var(--font-size-xs);
+    padding: 2px 8px;
+    border-radius: 6px;
   }
-  
-  .contact-info {
-    align-items: center;
-    width: 100%;
+  .project-description {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-sm);
   }
-  
-  .contact-item {
-    justify-content: center;
-    min-width: auto;
-    width: auto;
+  .project-tech {
+    gap: var(--space-xs);
+    margin-bottom: var(--space-sm);
+  }
+  .tech-tag {
     padding: 4px 8px;
-    font-size: 0.7rem;
+    font-size: var(--font-size-xs);
+    border-radius: 8px;
   }
-  
-  .contact-links {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .contact-link {
-    flex: 0;
-    min-width: auto;
-    text-align: center;
-    padding: 4px 8px;
-    font-size: 0.7rem;
+  .project-impact {
+    font-size: var(--font-size-sm);
+    padding: var(--space-xs);
+    border-radius: 8px;
   }
 }
-
 @media (max-width: 480px) {
-  .header-content {
-    padding: var(--space-xs);
+  .resume-main {
+    padding: 0 2px;
+    gap: var(--space-xs);
   }
-  
-  .achievements-list {
-    grid-template-columns: 1fr;
-    gap: var(--space-sm);
+  .resume-section {
+    padding: var(--space-sm);
+    border-radius: var(--border-radius-sm);
   }
-  
-  .achievements-full-width {
-    margin: var(--space-md) 10px;
-    width: calc(100% - 20px);
+  .section-title {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--space-sm);
   }
-  
-  .profile-image {
-    width: 50px;
-    height: 50px;
+  .projects-grid {
+    gap: var(--space-xs);
   }
-  
-  .profile-name {
-    font-size: var(--font-size-lg);
+  .project-card {
+    padding: var(--space-sm);
+    border-radius: var(--border-radius-sm);
   }
-  
-  .profile-title {
+  .project-header {
+    gap: 2px;
+  }
+  .project-name {
     font-size: var(--font-size-sm);
+    padding: 4px 6px;
+    border-radius: 4px;
   }
-  
-  .profile-tagline {
+  .project-status {
     font-size: 0.7rem;
+    padding: 1px 5px;
+    border-radius: 4px;
   }
-  
-  .contact-item {
-    font-size: 0.65rem;
-    padding: 3px 6px;
-    min-width: auto;
-    width: auto;
+  .project-description {
+    font-size: var(--font-size-xs);
+    margin-bottom: var(--space-xs);
   }
-  
-  .contact-links {
-    flex-direction: column;
-    width: 100%;
-    gap: 4px;
+  .project-tech {
+    gap: 2px;
+    margin-bottom: var(--space-xs);
   }
-  
-  .contact-link {
-    text-align: center;
-    padding: 3px 6px;
-    font-size: 0.65rem;
+  .tech-tag {
+    padding: 2px 4px;
+    font-size: var(--font-size-xs);
+    border-radius: 4px;
+  }
+  .project-impact {
+    font-size: var(--font-size-xs);
+    padding: 3px;
+    border-radius: 4px;
   }
 }
 
