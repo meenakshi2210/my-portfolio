@@ -1069,6 +1069,11 @@
     .contact-info {
       align-items: flex-start;
     }
+    .achievements-full-width {
+        max-width: 100%;
+        margin: var(--space-lg) px;
+        width: calc(100% - 30px);
+    }
 }
 
 /* Print Styles */
