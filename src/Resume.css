@@ -948,6 +948,26 @@
 }
 
 @media (max-width: 768px) {
+  /* Mobile Full-Width & Patterns */
+  body,
+  .resume-container,
+  .resume-main {
+    width: 100vw;
+    min-width: 0;
+    overflow-x: hidden;
+    background: radial-gradient(circle at 80% 10%, #f093fb22 0%, transparent 60%),
+                linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  .project-card {
+    width: 95vw;
+    margin: 0 auto 16px auto;
+    transform: scale(0.97);
+    transition: transform 0.3s;
+  }
+  .project-card:active,
+  .project-card:focus {
+    transform: scale(1);
+  }
   .resume-main {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
@@ -1004,55 +1024,20 @@
   }
 }
 @media (max-width: 480px) {
+  body,
+  .resume-container,
   .resume-main {
-    padding: 0 2px;
-    gap: var(--space-xs);
-  }
-  .resume-section {
-    padding: var(--space-sm);
-    border-radius: var(--border-radius-sm);
-  }
-  .section-title {
-    font-size: var(--font-size-base);
-    margin-bottom: var(--space-sm);
-  }
-  .projects-grid {
-    gap: var(--space-xs);
+    width: 100vw;
+    min-width: 0;
+    overflow-x: hidden;
+    background: radial-gradient(circle at 80% 10%, #f093fb33 0%, transparent 60%),
+                linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   }
   .project-card {
-    padding: var(--space-sm);
-    border-radius: var(--border-radius-sm);
-  }
-  .project-header {
-    gap: 2px;
-  }
-  .project-name {
-    font-size: var(--font-size-sm);
-    padding: 4px 6px;
-    border-radius: 4px;
-  }
-  .project-status {
-    font-size: 0.7rem;
-    padding: 1px 5px;
-    border-radius: 4px;
-  }
-  .project-description {
-    font-size: var(--font-size-xs);
-    margin-bottom: var(--space-xs);
-  }
-  .project-tech {
-    gap: 2px;
-    margin-bottom: var(--space-xs);
-  }
-  .tech-tag {
-    padding: 2px 4px;
-    font-size: var(--font-size-xs);
-    border-radius: 4px;
-  }
-  .project-impact {
-    font-size: var(--font-size-xs);
-    padding: 3px;
-    border-radius: 4px;
+    width: 98vw;
+    margin: 0 auto 10px auto;
+    transform: scale(0.93);
+    transition: transform 0.3s;
   }
 }
 

@@ -666,6 +666,44 @@
   }
 }
 
+/* Mobile Full-Width & Patterns */
+@media (max-width: 768px) {
+  body,
+  .projects-grid {
+    width: 100vw;
+    min-width: 0;
+    overflow-x: hidden;
+    background: radial-gradient(circle at 80% 10%, #f093fb22 0%, transparent 60%),
+                linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  .project-card {
+    width: 95vw;
+    margin: 0 auto 16px auto;
+    transform: scale(0.97);
+    transition: transform 0.3s;
+  }
+  .project-card:active,
+  .project-card:focus {
+    transform: scale(1);
+  }
+}
+@media (max-width: 480px) {
+  body,
+  .projects-grid {
+    width: 100vw;
+    min-width: 0;
+    overflow-x: hidden;
+    background: radial-gradient(circle at 80% 10%, #f093fb33 0%, transparent 60%),
+                linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  .project-card {
+    width: 98vw;
+    margin: 0 auto 10px auto;
+    transform: scale(0.93);
+    transition: transform 0.3s;
+  }
+}
+
 /* Animation for project cards */
 @keyframes fadeInUp {
   from {
