@@ -1014,6 +1014,7 @@ body {
   .hero-content{
     margin-left: -100px;
     padding: 0 16px;
+    margin-top: 150px;
   }
   .hero-cta{
     justify-content: center;
