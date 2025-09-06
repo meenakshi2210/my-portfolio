@@ -1011,6 +1011,9 @@ body {
                 radial-gradient(circle at 20% 80%, #667eea33 0%, transparent 60%),
                 linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   }
+  .view-all-container{
+    margin-top: 40px;
+  }
   .hero-content{
     margin-left: -100px;
     padding: 0 16px;
