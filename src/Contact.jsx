@@ -117,7 +117,7 @@ function Contact() {
                 </div>
                 <div className="profile-text">
                   <h2>Meenakshi Mehra</h2>
-                  <p>Full Stack Developer & Problem Solver</p>
+                  <p>Java Developer & Problem Solver</p>
                 </div>
               </div>
             </div>
